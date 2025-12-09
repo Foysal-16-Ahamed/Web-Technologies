@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Admission Form</title>
+</head>
+<body>
+
+<h2>University Admission Form</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- PERSONAL INFORMATION -->
+    <fieldset>
+        <legend><strong>Personal Information</strong></legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" maxlength="20" required>
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" maxlength="20" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+    </fieldset>
+    <br>
+
+    <!-- ACADEMIC INFORMATION -->
+    <fieldset>
+        <legend><strong>Academic Information</strong></legend>
+
+        <label for="ssc">SSC GPA:</label>
+        <input type="text" id="ssc" name="ssc_gpa" maxlength="5" required>
+        <br><br>
+
+        <label for="hsc">HSC GPA:</label>
+        <input type="text" id="hsc" name="hsc_gpa" maxlength="5" required>
+        <br><br>
+
+        <label for="department">Preferred Department:</label>
+        <select id="department" name="department" required>
+            <option value="">-- Select Department --</option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="BBA">BBA</option>
+            <option value="Civil">Civil Engineering</option>
+            <option value="English">English</option>
+        </select>
+        <br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" name="interest" value="Programming"> Programming<br>
+        <input type="checkbox" name="interest" value="Sports"> Sports<br>
+        <input type="checkbox" name="interest" value="Music"> Music<br>
+        <input type="checkbox" name="interest" value="Research"> Research<br>
+        <br>
+    </fieldset>
+    <br>
+
+    <!-- DOCUMENT UPLOAD -->
+    <fieldset>
+        <legend><strong>Required Documents</strong></legend>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" required>
+        <br><br>
+
+        <label for="transcript">Upload Transcript:</label>
+        <input type="file" id="transcript" name="transcript" required>
+        <br><br>
+    </fieldset>
+    <br>
+
+    <!-- SUBMIT & RESET -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
